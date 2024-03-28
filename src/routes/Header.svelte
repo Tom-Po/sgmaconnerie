@@ -1,13 +1,18 @@
 <script>
 	import { page } from '$app/stores';
+	import MobileNav from '$lib/components/MobileNav.svelte';
+	let open = false;
+	function toggleMenu() {
+		open = !open;
+	}
 </script>
 
 <header>
-	<nav>
+	<nav class="desktop-nav">
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/" class={$page.url.pathname === '/' ? 'active' : undefined} target="">
-					<span data-hover="Accueil">Accueil</span>
+					Accueil
 				</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/maconnerie' ? 'page' : undefined}>
@@ -16,7 +21,7 @@
 					class={$page.url.pathname === '/maconnerie' ? 'active' : undefined}
 					target=""
 				>
-					<span data-hover="Maçonnerie générale">Maçonnerie générale</span>
+					Maçonnerie générale
 				</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/renovation' ? 'page' : undefined}>
@@ -25,7 +30,7 @@
 					class={$page.url.pathname === '/renovation' ? 'active' : undefined}
 					target=""
 				>
-					<span data-hover="Rénovation">Rénovation</span>
+					Rénovation
 				</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/realisations' ? 'page' : undefined}>
@@ -34,7 +39,7 @@
 					class={$page.url.pathname === '/realisations' ? 'active' : undefined}
 					target=""
 				>
-					<span data-hover="Mes réalisations">Mes réalisations</span>
+					Mes réalisations
 				</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined}>
@@ -42,15 +47,23 @@
 					href="/contact"
 					class={$page.url.pathname === '/contact' ? 'active' : undefined}
 					target=""
-				>
-					<span data-hover="Contact">Contact</span>
+					>Contact
 				</a>
 			</li>
 		</ul>
 	</nav>
+	<nav class="mobile-nav">
+		<button on:click={toggleMenu}>Menu</button>
+		<div>{$page.url.pathname.slice(1).toLocaleUpperCase()}</div>
+		<MobileNav bind:open />
+	</nav>
 </header>
 
 <style>
+	.mobile-nav button {
+		border: none;
+		background: none;
+	}
 	nav {
 		display: flex;
 		background-color: var(--main-color);
@@ -80,5 +93,17 @@
 		padding: 3rem;
 		background-color: red;
 		z-index: 1200;
+	}
+	.mobile-nav {
+		display: none;
+	}
+	@media screen and (max-width: 1000px) {
+		.mobile-nav {
+			display: flex;
+			min-height: 40px;
+		}
+		.desktop-nav {
+			display: none;
+		}
 	}
 </style>

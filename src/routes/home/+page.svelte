@@ -1,16 +1,12 @@
 <script>
 	import Banner from '$lib/components/Banner.svelte';
-	import Header from './Header.svelte';
-	import './styles.css';
+	import Content from '$lib/components/Content.svelte';
 </script>
 
 <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
-	<link href="https://fonts.googleapis.com/css?family=Exo|Oswald" rel="stylesheet" />
 </svelte:head>
 
-<Header />
 <Banner />
-
-<slot />
+<Content />

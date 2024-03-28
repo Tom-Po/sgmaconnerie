@@ -47,14 +47,14 @@
 		flex-direction: column;
 		padding: 4rem;
 		/* TODO background image */
-		background-position: center top;
+		background-position: center 60%;
 		position: relative;
 	}
 
 	.overlay {
 		position: absolute;
 		inset: 0;
-		background-color: rgba(0, 0, 0, 0.1);
+		background-color: rgba(0, 0, 0, 0.3);
 	}
 
 	.display img {
