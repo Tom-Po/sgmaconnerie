@@ -31,9 +31,9 @@
 	];
 </script>
 
-<ContentBox title="Entreprise de maçonnerie à Saint-Malo" borderless>
+<ContentBox title="Entreprise de maçonnerie à Saint-Malo" borderless centered>
 	<div slot="text">
-		<h2>Confiez vos projets a sg maconnerie sur la cote d'emeraude</h2>
+		<h2 class="exo">Confiez vos projets a sg maconnerie sur la cote d'emeraude</h2>
 		<p>
 			<a class="inherit-links" href="http://www.sgmaconnerie.fr/"
 				><u><strong>SG Maçonnerie</strong></u></a
@@ -52,7 +52,64 @@
 	</div>
 </ContentBox>
 
+<ContentBox contrasted themed>
+	<div slot="text">
+		<h2 class="themed">
+			Maçon Sur la cote d'emeraude<br /> —
+		</h2>
+		<p>Faites-moi part de vos <strong>travaux de maçonnerie</strong>.</p>
+
+		<p>
+			Mon <strong>entreprise de maçonnerie</strong> intervient dans les appartements, les villas et
+			les maisons pour l’<strong>extension des murs</strong> ou la pose de cloisons.
+		</p>
+
+		<p>Vous pouvez me faire confiance pour le <strong>terrassement de votre terrain.</strong></p>
+
+		<p>
+			Préparation du sol, <strong>réhabilitation du terrain</strong>, fondation… Je suis à votre
+			disposition.
+		</p>
+
+		<p>
+			Je réalise également l’<strong>élévation des murs</strong>, pose de parrpaing, mur de
+			soutainement, création de mur en pierre, pose de pillier de portail en different matériaux.
+		</p>
+	</div>
+	<div class="gallery" slot="image">
+		<img
+			src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/media/cache/tmb_gallery_option/rc/TlvAsMBM/userfiles/39524/modif 20-07-2023/Aménagement-exterieur--à-saint-malo02.png"
+			alt="Maconnerie"
+		/>
+		<img
+			src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/media/cache/tmb_gallery_option/rc/1hkDxDBM/userfiles/39524/modif 20-07-2023/Travaux-de-terassement--à-saint-malo02.png"
+			alt="Travaux de terassement à saint malo02"
+		/>
+	</div>
+</ContentBox>
+
 <Gallery images={galleryImages} />
 <ContactBar>
 	<p>Confiez-moi aussi vos travaux de <u>Maçonnerie.</u></p>
 </ContactBar>
+
+<style>
+	h2 {
+		color: var(--black);
+		font-size: 30px;
+	}
+	h2,
+	p {
+		margin-bottom: 1rem;
+	}
+	.gallery {
+		display: flex;
+		margin-bottom: 6rem;
+	}
+	.gallery img {
+		max-width: 50%;
+	}
+	.themed {
+		color: var(--main-color);
+	}
+</style>

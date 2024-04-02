@@ -26,6 +26,7 @@
 	.gallery a {
 		overflow: hidden;
 		display: flex;
+		max-height: 500px;
 	}
 	.gallery img {
 		transition: all 300ms ease-in-out;

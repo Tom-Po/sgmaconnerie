@@ -1,12 +1,15 @@
 <script>
-	import LogoBlanc from '$lib/images/logo-blanc.png';
 </script>
 
-<div class="footer">
+<footer>
 	<img src="" alt="" />
 	<div class="company-infos">
 		<div class="company-logo">
-			<img class="logo" src={LogoBlanc} alt="" />
+			<img
+				class="logo"
+				src={'https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/logo.png'}
+				alt=""
+			/>
 		</div>
 		<div class="infos">
 			<article>
@@ -55,9 +58,63 @@
 			>
 		</div>
 	</div>
-</div>
+</footer>
 
 <style>
+	footer {
+		background-image: url('https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif%2020-07-2023/Une%20entreprise-de-ma%C3%A7onnerie--%C3%A0-saint-malo.png');
+		background-position: center center;
+		background-size: cover;
+		background-attachment: scroll;
+		background-repeat: no-repeat;
+	}
+	.logo {
+		max-width: 350px;
+	}
+	.company-infos {
+		max-width: 60%;
+		margin-left: auto;
+		margin-right: 4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.company-logo img {
+		max-width: 200px;
+	}
+	.infos {
+		display: flex;
+		color: var(--black);
+		z-index: 100;
+		padding: 2rem 0;
+	}
+	article {
+		flex-basis: 33%;
+		text-align: center;
+		padding: 1rem 2rem;
+		min-width: 250px;
+		border-right: 1px solid var(--black);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	article:last-of-type {
+		border: none;
+	}
+	article p {
+		margin-bottom: 0;
+		font-size: 20px;
+	}
+
+	.logo {
+		animation: pulse 1s forwards cubic-bezier(0.4, -0.6, 0.2, 1);
+	}
+
+	.social-link {
+		margin: 0 0.25rem;
+	}
+
 	.bottom {
 		background-color: #000;
 		color: var(--white);
@@ -76,43 +133,5 @@
 		font-size: 15px;
 		font-weight: 400;
 		padding: 0.25rem;
-	}
-	.logo {
-		max-width: 350px;
-	}
-	.company-infos {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-	}
-	.infos {
-		display: flex;
-		color: var(--black);
-		z-index: 100;
-	}
-	article {
-		flex-basis: 33%;
-		text-align: center;
-		padding: 1rem 2rem;
-		min-width: 250px;
-		border-right: 1px solid var(--black);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	article:last-of-type {
-		border: none;
-	}
-	article p {
-		margin-bottom: 0;
-	}
-
-	.logo {
-		animation: pulse 1s forwards cubic-bezier(0.4, -0.6, 0.2, 1);
-	}
-
-	.social-link {
-		margin: 0 0.25rem;
 	}
 </style>

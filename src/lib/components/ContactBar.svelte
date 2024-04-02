@@ -1,6 +1,6 @@
 <div class="contact-bar">
 	<slot />
-	<button>Me contacter</button>
+	<a href="/contact">Me contacter</a>
 </div>
 
 <style>
@@ -13,7 +13,7 @@
 		align-items: center;
 		gap: 2rem;
 	}
-	button {
+	a {
 		background-color: black;
 		color: white;
 		border-radius: 20px;
@@ -21,9 +21,9 @@
 		text-transform: uppercase;
 		color: var(--main-color);
 		border: 1px solid var(--main-color);
-		cursor: pointer;
 	}
-	button:hover {
-		text-decoration: underline;
+	a:visited,
+	a:focus {
+		color: var(--main-color);
 	}
 </style>

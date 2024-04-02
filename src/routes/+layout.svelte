@@ -2,6 +2,7 @@
 	import Banner from '$lib/components/Banner.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
+	import '@fortawesome/fontawesome-free/css/all.min.css';
 	import './styles.css';
 </script>
 

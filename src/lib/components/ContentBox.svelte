@@ -2,19 +2,19 @@
 	export let title = '';
 	export let borderless = false;
 	export let contrasted = false;
+	export let centered = false;
+	export let themed = false;
 </script>
 
-<div class="content-box {contrasted && 'contrasted'}">
+<div class:contrasted class:centered class="content-box">
 	<div class="inner">
 		{#if title !== ''}
 			<h1>{title}</h1>
 		{/if}
 	</div>
 	<div class="wrapper">
-		<div class="text {borderless && 'borderless'}">
-			<slot name="text">
-				<p>Missing text</p>
-			</slot>
+		<div class:borderless class:themed class="text">
+			<slot name="text" />
 		</div>
 		<div class="image">
 			<slot name="image" />
@@ -23,22 +23,17 @@
 </div>
 
 <style>
-	h1 {
-		font-size: 2.3rem;
-		font-weight: 400;
+	.centered {
 		text-align: center;
-		margin: 0 auto 0.5rem auto;
-		padding: 1rem;
 	}
-	p {
-		margin-bottom: 0.5rem;
+	.centered .text {
+		flex-basis: 100%;
+		border: none;
+		margin: 0 auto;
 	}
-
-	.wrapper {
-		display: flex;
-		align-items: center;
+	.text.themed {
+		border-color: var(--main-color);
 	}
-
 	.text {
 		flex-basis: 41%;
 		flex-shrink: 0;
@@ -48,6 +43,22 @@
 		border-left: 1px solid var(--black);
 		margin-left: 10%;
 		margin-top: 2rem;
+	}
+	h1 {
+		font-size: 2.3rem;
+		font-weight: 400;
+		text-align: center;
+		margin: 0 auto 0.5rem auto;
+		padding: 1rem;
+	}
+
+	p {
+		margin-bottom: 0.5rem;
+	}
+
+	.wrapper {
+		display: flex;
+		align-items: center;
 	}
 
 	.image {
