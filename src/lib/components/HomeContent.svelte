@@ -56,44 +56,51 @@
 		src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/galerie.png"
 	/>
 </div>
+<div class="skewed-border">
+	<ContentBox borderless contrasted>
+		<div slot="text">
+			<h3>Entreprise de maçonnerie et de rénovation A SAINT-MALO ET SA COTE <br /> —</h3>
 
-<ContentBox borderless contrasted>
-	<div slot="text">
-		<h3>Entreprise de maçonnerie et de rénovation A SAINT-MALO ET SA COTE <br /> —</h3>
+			<p>Je vous propose différentes prestations en <strong>maçonnerie générale</strong>.</p>
 
-		<p>Je vous propose différentes prestations en <strong>maçonnerie générale</strong>.</p>
+			<p>
+				<strong>Élévation des murs, création de terrasses</strong>,<strong>
+					Fondation, Création de mur de clôture</strong
+				>… Je suis à votre disposition.
+			</p>
 
-		<p>
-			<strong>Élévation des murs, création de terrasses</strong>,<strong>
-				Fondation, Création de mur de clôture</strong
-			>… Je suis à votre disposition.
-		</p>
+			<p>Je me charge de l’extension et de l’agrandissement des pièces de vie.</p>
 
-		<p>Je me charge de l’extension et de l’agrandissement des pièces de vie.</p>
+			<p>
+				<strong>Terrassier à Saint Malo,&nbsp; et sa côte d'Émeraude</strong>, je réalise la
+				<strong>réhabilitation de sols</strong>, le <strong>nivellement</strong> et la
+				<strong>fondation</strong>.
+			</p>
 
-		<p>
-			<strong>Terrassier à Saint Malo,&nbsp; et sa côte d'Émeraude</strong>, je réalise la
-			<strong>réhabilitation de sols</strong>, le <strong>nivellement</strong> et la
-			<strong>fondation</strong>.
-		</p>
+			<p>Tout est effectué selon le type et la nature de votre terrain.</p>
 
-		<p>Tout est effectué selon le type et la nature de votre terrain.</p>
+			<p>J’interviens également pour la rénovation de votre habitat.</p>
 
-		<p>J’interviens également pour la rénovation de votre habitat.</p>
-
-		<p>
-			De la <strong>pose de carrelage</strong>&nbsp;au<strong> Dallage</strong> de votre sol, ainsi
-			qu'au <strong>rejointoiement</strong> de vos murs. Je vous assure des travaux dans les règles de
-			l'art.
-		</p>
-	</div>
-	<div slot="image">
-		<img
-			src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif%2020-07-2023/Entreprise-de-ma%C3%A7onnerie-et-de-r%C3%A9novation-%C3%A0-saint-malo.png"
-			alt="Maconnerie"
-		/>
-	</div>
-</ContentBox>
+			<p>
+				De la <strong>pose de carrelage</strong>&nbsp;au<strong> Dallage</strong> de votre sol,
+				ainsi qu'au <strong>rejointoiement</strong> de vos murs. Je vous assure des travaux dans les
+				règles de l'art.
+			</p>
+		</div>
+		<div slot="image">
+			<img
+				src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif%2020-07-2023/Entreprise-de-ma%C3%A7onnerie-et-de-r%C3%A9novation-%C3%A0-saint-malo.png"
+				alt="Maconnerie"
+			/>
+		</div>
+	</ContentBox>
+	<img
+		alt="frame top"
+		class="border-img"
+		src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/frame-top.png"
+		style="max-width: 100%; width: 100%;"
+	/>
+</div>
 
 <div class="content">
 	<h3 style="text-align: center">Mes garanties en travaux de rénovation près de Dinan</h3>
@@ -140,28 +147,34 @@
 		</article>
 	</div>
 </div>
+<div class="zone-wrapper">
+	<img
+		alt="motif2.3"
+		src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/motif2.3.png"
+		style="max-width: 100%; width: 100%;"
+	/>
+	<div class="zone">
+		<h3>Zone d’intervention de votre expert en maçonnerie <br /> —</h3>
+		<article>
+			<p>
+				Pour réaliser vos <strong>travaux de maçonnerie</strong> et <strong>de rénovation</strong>,
+				je me déplace dans un rayon de 40 km autour de Saint-Malo&nbsp;:
+			</p>
 
-<div class="content">
-	<h3>Zone d’intervention de votre expert en maçonnerie</h3>
-	<article>
-		<p>
-			Pour réaliser vos <strong>travaux de maçonnerie</strong> et <strong>de rénovation</strong>, je
-			me déplace dans un rayon de 40 km autour de Saint-Malo&nbsp;:
-		</p>
-
-		<ul class="with-list">
-			<li>Saint-Malo</li>
-			<li>Dinard</li>
-			<li>Saint-Briac-sur-Mer&nbsp;</li>
-			<li>Cancale</li>
-			<li>Lancieux&nbsp;</li>
-			<li>Dinan</li>
-			<li>Dol-de-Bretagne</li>
-			<li>Saint-Jouan-des-Guérets</li>
-			<li>Saint-Méloir-des-Ondes</li>
-			<li>Saint-Coulomb</li>
-		</ul>
-	</article>
+			<ul class="with-list">
+				<li>Saint-Malo</li>
+				<li>Dinard</li>
+				<li>Saint-Briac-sur-Mer&nbsp;</li>
+				<li>Cancale</li>
+				<li>Lancieux&nbsp;</li>
+				<li>Dinan</li>
+				<li>Dol-de-Bretagne</li>
+				<li>Saint-Jouan-des-Guérets</li>
+				<li>Saint-Méloir-des-Ondes</li>
+				<li>Saint-Coulomb</li>
+			</ul>
+		</article>
+	</div>
 </div>
 
 <style>
@@ -194,10 +207,35 @@
 		animation: pulse 1s forwards;
 	}
 	.icons article:hover img {
-		transform: scale(1.3) translateY(-10px);
+		transform: scale(1.1) translateY(-10px);
 		transition: all 200ms ease-in-out;
+		opacity: 0.7;
 	}
 	a {
 		color: var(--main-color);
+	}
+
+	.zone-wrapper {
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		padding: 0 0 2rem 0;
+		background-image: url('https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif 20-07-2023/Travaux-de-maçonnerie-et-de-rénovation-à-saint-malo.png');
+		margin-bottom: 2rem;
+		background-color: rgba(235, 235, 235, 1);
+	}
+	.zone {
+		width: 33%;
+		margin-right: 6rem;
+		background-color: rgba(255, 255, 255, 0.9);
+		margin: 0 6rem 50px auto;
+		padding: 1rem;
+	}
+	.skewed-border {
+		background-color: rgba(235, 235, 235, 1);
+	}
+	.skewed-border img {
+		margin-bottom: -8px;
 	}
 </style>

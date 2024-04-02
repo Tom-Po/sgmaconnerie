@@ -3,7 +3,7 @@
 	import LogoBlanc from '$lib/images/logo-blanc.png';
 </script>
 
-<div class="display" style="background-image: url({Grenier})">
+<div class="banner" style="background-image: url({Grenier})">
 	<div class="overlay"></div>
 	<img class="logo" src={LogoBlanc} alt="" />
 	<div class="infos">
@@ -42,7 +42,8 @@
 </div>
 
 <style>
-	.display {
+	.banner {
+		overflow: hidden;
 		padding-top: 2rem;
 		min-height: 90vh;
 		display: flex;
@@ -50,7 +51,6 @@
 		justify-content: center;
 		flex-direction: column;
 		padding: 4rem;
-		/* TODO background image */
 		background-position: center 60%;
 		position: relative;
 	}
@@ -61,7 +61,7 @@
 		background-color: rgba(0, 0, 0, 0.3);
 	}
 
-	.display img {
+	.banner img {
 		max-width: 350px;
 		z-index: 100;
 	}
@@ -82,9 +82,11 @@
 		flex-direction: column;
 		gap: 1rem;
 	}
+
 	article:last-of-type {
 		border: none;
 	}
+
 	article p {
 		margin-bottom: 0;
 		font-size: 18px;

@@ -3,8 +3,8 @@
 
 <footer>
 	<img src="" alt="" />
-	<div class="company-infos">
-		<div class="company-logo">
+	<div class="company">
+		<div class="logo">
 			<img
 				class="logo"
 				src={'https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/logo.png'}
@@ -13,31 +13,35 @@
 		</div>
 		<div class="infos">
 			<article>
+				<p><i class="fa-solid fa-location-dot" /></p>
 				<p>35400 Saint-Malo</p>
 			</article>
 			<article>
+				<p><i class="fa-solid fa-mobile-phone" /></p>
 				<p>07 85 42 98 86</p>
 			</article>
 			<article>
-				<a
-					class="social-link"
-					href="https://www.instagram.com/sg_maconnerie35/?igshid=YmMyMTA2M2Y%3D"
-					target="_blank"
-					><img
-						alt="Ins1"
-						src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/ins.png"
-					/></a
-				><a class="social-link" href="https://goo.gl/maps/QmZsHZ4ju91QRf8D6" target="_blank"
-					><img
-						alt="gmb1"
-						src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/gmb.png"
-					/></a
-				><a class="social-link" href="https://www.facebook.com/" target="_blank"
-					><img
-						alt="fb1"
-						src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/fb.png"
-					/></a
-				>
+				<div>
+					<a
+						class="social-link"
+						href="https://www.instagram.com/sg_maconnerie35/?igshid=YmMyMTA2M2Y%3D"
+						target="_blank"
+						><img
+							alt="Ins1"
+							src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/ins.png"
+						/></a
+					><a class="social-link" href="https://goo.gl/maps/QmZsHZ4ju91QRf8D6" target="_blank"
+						><img
+							alt="gmb1"
+							src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/gmb.png"
+						/></a
+					><a class="social-link" href="https://www.facebook.com/" target="_blank"
+						><img
+							alt="fb1"
+							src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/fb.png"
+						/></a
+					>
+				</div>
 			</article>
 		</div>
 	</div>
@@ -71,7 +75,7 @@
 	.logo {
 		max-width: 350px;
 	}
-	.company-infos {
+	.company {
 		max-width: 60%;
 		margin-left: auto;
 		margin-right: 4rem;
@@ -80,7 +84,7 @@
 		align-items: center;
 		flex-direction: column;
 	}
-	.company-logo img {
+	.logo img {
 		max-width: 200px;
 	}
 	.infos {
@@ -133,5 +137,28 @@
 		font-size: 15px;
 		font-weight: 400;
 		padding: 0.25rem;
+	}
+
+	@media screen and (max-width: 992px) {
+		.company {
+			max-width: unset;
+			margin: 0 auto;
+		}
+		.company article {
+			border: none;
+			flex-direction: column;
+		}
+		.logo {
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+		}
+		.bottom {
+			padding: 0.5rem 0;
+		}
+		.bottom,
+		.infos {
+			flex-direction: column;
+		}
 	}
 </style>

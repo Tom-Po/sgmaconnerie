@@ -65,12 +65,15 @@
 		</p>
 	</div>
 </ContentBox>
+
 <ContentBox title="MAÇONNERIE GÉNÉRALE a saint-malo" borderless></ContentBox>
 <Gallery images={galleryImages} />
+
 <ContentBox title="Travaux de RÉNOVATION " borderless></ContentBox>
 <div class="gallery-wrapper">
 	<Gallery images={galleryImagesRenov} />
 </div>
+
 <ContactBar></ContactBar>
 
 <style>
