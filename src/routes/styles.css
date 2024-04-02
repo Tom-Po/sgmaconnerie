@@ -75,6 +75,8 @@ ul.with-list li {
 	--link-font: var(--font-Exo);
 
 	font-family: var(--font-Exo);
+
+	--max-width-md: 1200px;
 }
 
 

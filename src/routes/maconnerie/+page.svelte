@@ -1,5 +1,34 @@
 <script>
+	import ContactBar from '$lib/components/ContactBar.svelte';
 	import ContentBox from '$lib/components/ContentBox.svelte';
+	import Gallery from '$lib/components/Gallery.svelte';
+	const galleryImages = [
+		{
+			id: 0,
+			src: 'https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif 20-07-2023/Des-travaux-de-rénovation-exterieur-à-saint-malo.png',
+			alt: 'Des travaux de rénovation exterieur à saint malo'
+		},
+		{
+			id: 1,
+			src: 'https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif 20-07-2023/équipement-de-maçonnorie-à-saint-malo02.png',
+			alt: 'équipement de maçonnorie à saint malo02'
+		},
+		{
+			id: 2,
+			src: 'https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif 20-07-2023/équipement-de-travail-de-maçonnorie-à-saint-malo02.png',
+			alt: 'équipement de travail de maçonnorie à saint malo02'
+		},
+		{
+			id: 3,
+			src: "https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif 20-07-2023/Rénovation-intérieur-d'un-maison-à-Saint-Malo02.png",
+			alt: "Rénovation intérieur d'un maison à Saint Malo02"
+		},
+		{
+			id: 4,
+			src: 'https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/media/cache/auto_tmb_600/userfiles/39524/modif 20-07-2023/Le--terrassement---à-saint-malo.png',
+			alt: 'Le terrassement à saint malo'
+		}
+	];
 </script>
 
 <ContentBox title="Entreprise de maçonnerie à Saint-Malo" borderless>
@@ -23,88 +52,7 @@
 	</div>
 </ContentBox>
 
-<div class="gallery">
-	<div class="wt-gallery-picture-wrapper pull-left text-center" data-display-mode="default">
-		<a
-			href="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif 20-07-2023/Des-travaux-de-rénovation-exterieur-à-saint-malo.png"
-			class="fancybox"
-			rel="abc-1058211"
-			data-link="/picture/8994391"
-		>
-			<img
-				src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/media/cache/auto_tmb_600/userfiles/39524/modif 20-07-2023/Des-travaux-de-rénovation-exterieur-à-saint-malo.png"
-				style="flex-grow:0;flex-shrink:0;"
-				alt="Des travaux de rénovation exterieur à saint malo"
-			/>
-		</a>
-	</div>
-
-	<div class="wt-gallery-picture-wrapper pull-left text-center" data-display-mode="default">
-		<a
-			href="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif 20-07-2023/équipement-de-maçonnorie-à-saint-malo02.png"
-			class="fancybox"
-			rel="abc-1058211"
-			data-link="/picture/8994411"
-		>
-			<img
-				src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/media/cache/auto_tmb_600/userfiles/39524/modif 20-07-2023/équipement-de-maçonnorie-à-saint-malo02.png"
-				style="flex-grow:0;flex-shrink:0;"
-				alt="équipement de maçonnorie à saint malo02"
-			/>
-		</a>
-	</div>
-
-	<div class="wt-gallery-picture-wrapper pull-left text-center" data-display-mode="default">
-		<a
-			href="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif 20-07-2023/équipement-de-travail-de-maçonnorie-à-saint-malo02.png"
-			class="fancybox"
-			rel="abc-1058211"
-			data-link="/picture/8994421"
-		>
-			<img
-				src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/media/cache/auto_tmb_600/userfiles/39524/modif 20-07-2023/équipement-de-travail-de-maçonnorie-à-saint-malo02.png"
-				style="flex-grow:0;flex-shrink:0;"
-				alt="équipement de travail de maçonnorie à saint malo02"
-			/>
-		</a>
-	</div>
-
-	<div class="wt-gallery-picture-wrapper pull-left text-center" data-display-mode="default">
-		<a
-			href="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif 20-07-2023/Rénovation-intérieur-d'un-maison-à-Saint-Malo02.png"
-			class="fancybox"
-			rel="abc-1058211"
-			data-link="/picture/8994451"
-		>
-			<img
-				src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/media/cache/auto_tmb_600/userfiles/39524/modif 20-07-2023/Rénovation-intérieur-d'un-maison-à-Saint-Malo02.png"
-				style="flex-grow:0;flex-shrink:0;"
-				alt="Rénovation intérieur d'un maison à Saint Malo02"
-			/>
-		</a>
-	</div>
-
-	<div class="wt-gallery-picture-wrapper pull-left text-center" data-display-mode="default">
-		<a
-			href="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif 20-07-2023/Le--terrassement---à-saint-malo.png"
-			class="fancybox"
-			rel="abc-1058211"
-			data-link="/picture/9002501"
-		>
-			<img
-				src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/media/cache/auto_tmb_600/userfiles/39524/modif 20-07-2023/Le--terrassement---à-saint-malo.png"
-				style="flex-grow:0;flex-shrink:0;"
-				alt="Le terrassement à saint malo"
-			/>
-		</a>
-	</div>
-</div>
-
-<style>
-	.gallery {
-		display: flex;
-		align-items: stretch;
-		gap: 0.5rem;
-		margin: 0 1rem;
-	}
-</style>
+<Gallery images={galleryImages} />
+<ContactBar>
+	<p>Confiez-moi aussi vos travaux de <u>Maçonnerie.</u></p>
+</ContactBar>

@@ -1,10 +1,24 @@
-<script>
+<script lang="ts">
 	export let src = '';
 	export let title = '';
 	export let link = '';
+	let animated = false;
+
+	const options = {};
+	function actionWhenInViewport(e: any) {
+		const observer = new IntersectionObserver((entries) => {
+			if (entries[0].isIntersecting) {
+				// element in viewport
+				observer.disconnect();
+				animated = true;
+			}
+		}, options);
+
+		observer.observe(e);
+	}
 </script>
 
-<article>
+<article class:animated use:actionWhenInViewport>
 	<a href={link}><img alt="exp" {src} /></a>
 	<a class="exo" href={link}>{title}</a>
 </article>
@@ -14,7 +28,13 @@
 		display: flex;
 		flex-basis: 33%;
 		flex-direction: column;
-		animation: pulse 1s forwards;
+		opacity: 0;
+		transition: all 200ms 500ms ease-in-out;
+	}
+	.animated {
+		opacity: 1;
+		transition-delay: opacity 1s;
+		animation: pulse 1s 0.5s forwards;
 	}
 	article:hover img {
 		opacity: 0.7;
@@ -23,19 +43,5 @@
 	}
 	a {
 		color: var(--main-color);
-	}
-
-	@keyframes pulse {
-		0% {
-			transform: scale(1, 1);
-		}
-
-		50% {
-			transform: scale(1.1, 1.1);
-		}
-
-		100% {
-			transform: scale(1, 1);
-		}
 	}
 </style>

@@ -84,28 +84,10 @@
 	}
 
 	.logo {
-		animation: grow 1s forwards cubic-bezier(0.4, -0.6, 0.2, 1);
+		animation: pulse 1s forwards cubic-bezier(0.4, -0.6, 0.2, 1);
 	}
 
 	.social-link {
 		margin: 0 0.25rem;
-	}
-
-	@keyframes grow {
-		0% {
-			transform: scale(0);
-		}
-		25% {
-			transform: scale(1.2);
-		}
-		50% {
-			transform: scale(1);
-		}
-		65% {
-			transform: scale(1.1);
-		}
-		80% {
-			transform: scale(1);
-		}
 	}
 </style>

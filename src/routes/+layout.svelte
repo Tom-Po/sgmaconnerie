@@ -1,6 +1,7 @@
 <script>
 	import Banner from '$lib/components/Banner.svelte';
-	import Header from './Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import Header from '$lib/components/Header.svelte';
 	import './styles.css';
 </script>
 
@@ -12,5 +13,5 @@
 
 <Header />
 <Banner />
-
 <slot />
+<Footer />
