@@ -1,16 +1,13 @@
 <script lang="ts">
-	type ImageType = {
-		id: number;
-		alt: string;
-		src: string;
-	};
+	import type { ImageType } from '$lib/types';
+
 	export let images: ImageType[] = [];
 </script>
 
 <div class="gallery">
-	{#each images as img}
-		<a target="_blank" href={img.src}>
-			<img src={img.src} alt={img.alt} />
+	{#each images as { src, alt }}
+		<a target="_blank" href={src}>
+			<img {src} {alt} />
 		</a>
 	{/each}
 </div>
@@ -23,27 +20,31 @@
 		gap: 0.5rem;
 		margin: 0 1rem;
 	}
-	.gallery a {
+
+	a {
 		overflow: hidden;
 		display: flex;
 		max-height: 500px;
 	}
-	.gallery img {
+
+	img {
 		transition: all 300ms ease-in-out;
 	}
-	.gallery img:hover {
+
+	img:hover {
 		transform: scale(1.2);
 	}
+
 	@media screen and (max-width: 1200px) {
 		.gallery {
 			flex-wrap: wrap;
 		}
-		.gallery a {
+		a {
 			flex-basis: calc(50% - 1rem);
 		}
 	}
 	@media screen and (max-width: 768px) {
-		.gallery a {
+		a {
 			flex-basis: 100%;
 			align-items: center;
 			justify-content: center;

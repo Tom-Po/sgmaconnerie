@@ -34,7 +34,7 @@
 
 <ContentBox title="Entreprise de rénovation à Saint-Malo" borderless centered>
 	<div slot="text">
-		<h2 class="exo">
+		<h2 class="exo dark">
 			Embellissez votre habitat avec votre spécialiste en travaux de rénovation sur la cote
 			d'emeraude
 		</h2>
@@ -97,10 +97,6 @@
 </ContactBar>
 
 <style>
-	h2 {
-		color: var(--black);
-		font-size: 30px;
-	}
 	h2,
 	p {
 		margin-bottom: 1rem;

@@ -1,13 +1,16 @@
-<script type="ts">
+<script lang="ts">
+	import { fly } from '$lib/transitions';
+	import type { Route } from '$lib/types';
+
 	export let open = false;
+	export let routes: Route[] = [];
+	export let toggleMenu = () => {};
 </script>
 
 {#if open}
-	<div>
-		{#each ['/', 'maconnerie', 'renovation', 'realisations'] as link, i}
-			<p>
-				<a on:click={() => (open = !open)} href={link}>{link === '/' ? 'Home' : link}</a>
-			</p>
+	<div transition:fly={{ y: -100 }}>
+		{#each routes as { pathname, label }}
+			<a on:click={toggleMenu} href={pathname}>{label}</a>
 		{/each}
 	</div>
 {/if}
@@ -18,22 +21,17 @@
 		text-align: center;
 		font-size: 1.5em;
 		letter-spacing: 0.15em;
-		padding: 1em;
-		padding-top: 0;
 		color: #eef;
-		z-index: 2000;
+		z-index: 1500;
 		position: fixed;
 		inset: 0;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+		padding-top: 4rem;
 	}
-	p {
-		cursor: pointer;
-		width: max-content;
-		margin: 1rem auto;
-	}
-	p:hover {
-		text-decoration: underline;
+
+	a {
+		margin: 0.5rem auto;
 	}
 </style>

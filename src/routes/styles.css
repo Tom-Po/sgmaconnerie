@@ -101,6 +101,16 @@ h6.exo {
 	color: var(--black);
 }
 
+h1.dark,
+h2.dark,
+h3.dark,
+h4.dark,
+h5.dark,
+h6.dark {
+	color: var(--black);
+	font-size: 30px;
+}
+
 a {
 	text-transform: uppercase;
 	text-decoration: none;

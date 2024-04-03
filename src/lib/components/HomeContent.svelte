@@ -238,4 +238,13 @@
 	.skewed-border img {
 		margin-bottom: -8px;
 	}
+	@media screen and (max-width: 992px) {
+		.zone {
+			width: 80%;
+			margin: 0 auto 50px auto;
+		}
+		.icons {
+			flex-direction: column;
+		}
+	}
 </style>

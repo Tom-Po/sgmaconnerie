@@ -12,6 +12,7 @@
 		justify-content: center;
 		align-items: center;
 		gap: 2rem;
+		text-align: center;
 	}
 	a {
 		background-color: black;

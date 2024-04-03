@@ -74,7 +74,7 @@
 	<Gallery images={galleryImagesRenov} />
 </div>
 
-<ContactBar></ContactBar>
+<ContactBar />
 
 <style>
 	.gallery-wrapper {

@@ -5,7 +5,7 @@
 
 <ContentBox title="Contactez mon entreprise de maçonnerie et de rénovation à Saint-Malo " centered>
 	<div slot="text">
-		<h2 class="exo">
+		<h2 class="exo dark">
 			Laissez votre message à propos mes prestations en maçonnerie en Ille-et-Vilaine
 		</h2>
 		<p>
@@ -18,10 +18,6 @@
 <div class="infos">Mes horaires Du lundi au samedi de 8 h à 18 h 30</div>
 
 <style>
-	h2 {
-		color: var(--black);
-		font-size: 30px;
-	}
 	h2,
 	p {
 		margin-bottom: 2rem;

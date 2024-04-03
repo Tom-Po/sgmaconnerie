@@ -58,12 +58,10 @@
 	.overlay {
 		position: absolute;
 		inset: 0;
-		background-color: rgba(0, 0, 0, 0.3);
+		background-color: rgba(0, 0, 0, 0.65);
 	}
 
 	.banner img {
-		max-width: 350px;
-		z-index: 100;
 	}
 	.infos {
 		display: flex;
@@ -94,12 +92,29 @@
 
 	.logo {
 		animation: pulse 1s forwards cubic-bezier(0.4, -0.6, 0.2, 1);
+		margin-bottom: 1rem;
+		max-width: 350px;
+		z-index: 100;
 	}
 
 	.social-link {
 		margin: 0 0.25rem;
 	}
 	i {
-		font-size: 30px;
+		font-size: 1.5rem;
+	}
+
+	@media screen and (max-width: 992px) {
+		.infos {
+			flex-direction: column;
+		}
+		article {
+			border: none;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+		.logo {
+			max-width: 300px;
+		}
 	}
 </style>

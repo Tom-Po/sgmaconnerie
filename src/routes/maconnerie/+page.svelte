@@ -4,27 +4,22 @@
 	import Gallery from '$lib/components/Gallery.svelte';
 	const galleryImages = [
 		{
-			id: 0,
 			src: 'https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif 20-07-2023/Des-travaux-de-rénovation-exterieur-à-saint-malo.png',
 			alt: 'Des travaux de rénovation exterieur à saint malo'
 		},
 		{
-			id: 1,
 			src: 'https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif 20-07-2023/équipement-de-maçonnorie-à-saint-malo02.png',
 			alt: 'équipement de maçonnorie à saint malo02'
 		},
 		{
-			id: 2,
 			src: 'https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif 20-07-2023/équipement-de-travail-de-maçonnorie-à-saint-malo02.png',
 			alt: 'équipement de travail de maçonnorie à saint malo02'
 		},
 		{
-			id: 3,
 			src: "https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/modif 20-07-2023/Rénovation-intérieur-d'un-maison-à-Saint-Malo02.png",
 			alt: "Rénovation intérieur d'un maison à Saint Malo02"
 		},
 		{
-			id: 4,
 			src: 'https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/media/cache/auto_tmb_600/userfiles/39524/modif 20-07-2023/Le--terrassement---à-saint-malo.png',
 			alt: 'Le terrassement à saint malo'
 		}
@@ -33,7 +28,7 @@
 
 <ContentBox title="Entreprise de maçonnerie à Saint-Malo" borderless centered>
 	<div slot="text">
-		<h2 class="exo">Confiez vos projets a sg maconnerie sur la cote d'emeraude</h2>
+		<h2 class="exo dark">Confiez vos projets a sg maconnerie sur la cote d'emeraude</h2>
 		<p>
 			<a class="inherit-links" href="http://www.sgmaconnerie.fr/"
 				><u><strong>SG Maçonnerie</strong></u></a
@@ -94,10 +89,6 @@
 </ContactBar>
 
 <style>
-	h2 {
-		color: var(--black);
-		font-size: 30px;
-	}
 	h2,
 	p {
 		margin-bottom: 1rem;
