@@ -7,6 +7,12 @@
 	export let toggleMenu = () => {};
 </script>
 
+<svelte:window
+	on:wheel|nonpassive={(e) => {
+		if (open) e.preventDefault();
+	}}
+/>
+
 {#if open}
 	<div transition:fly={{ y: -100 }}>
 		{#each routes as { pathname, label }}
@@ -28,7 +34,7 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		padding-top: 4rem;
+		justify-content: center;
 	}
 
 	a {

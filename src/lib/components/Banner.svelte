@@ -1,6 +1,7 @@
 <script>
 	import Grenier from '$lib/images/grenier.jpg';
 	import LogoBlanc from '$lib/images/logo-blanc.png';
+	import SocialLinks from './SocialLinks.svelte';
 </script>
 
 <div class="banner" style="background-image: url({Grenier})">
@@ -16,27 +17,7 @@
 			<p>07 85 42 98 86</p>
 		</article>
 		<article>
-			<div>
-				<a
-					class="social-link"
-					href="https://www.instagram.com/sg_maconnerie35/?igshid=YmMyMTA2M2Y%3D"
-					target="_blank"
-					><img
-						alt="Ins1"
-						src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/Ins1.png"
-					/></a
-				><a class="social-link" href="https://goo.gl/maps/QmZsHZ4ju91QRf8D6" target="_blank"
-					><img
-						alt="gmb1"
-						src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/gmb1.png"
-					/></a
-				><a class="social-link" href="https://www.facebook.com/" target="_blank"
-					><img
-						alt="fb1"
-						src="https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/39524/fb1.png"
-					/></a
-				>
-			</div>
+			<SocialLinks white />
 		</article>
 	</div>
 </div>
@@ -61,8 +42,6 @@
 		background-color: rgba(0, 0, 0, 0.65);
 	}
 
-	.banner img {
-	}
 	.infos {
 		display: flex;
 		color: var(--white);
@@ -97,9 +76,6 @@
 		z-index: 100;
 	}
 
-	.social-link {
-		margin: 0 0.25rem;
-	}
 	i {
 		font-size: 1.5rem;
 	}
@@ -112,9 +88,7 @@
 			border: none;
 			padding-top: 0;
 			padding-bottom: 0;
-		}
-		.logo {
-			max-width: 300px;
+			margin-bottom: 1rem;
 		}
 	}
 </style>

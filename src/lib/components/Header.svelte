@@ -63,6 +63,7 @@
 	nav {
 		display: flex;
 		background-color: var(--main-color);
+		height: 55px;
 	}
 	ul {
 		display: flex;
@@ -89,6 +90,7 @@
 		.mobile-nav {
 			display: flex;
 			min-height: 40px;
+			align-items: center;
 		}
 		.desktop-nav {
 			display: none;

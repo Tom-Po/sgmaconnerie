@@ -77,4 +77,9 @@
 		font-size: 8px;
 		text-align: center;
 	}
+	@media screen and (max-width: 992px) {
+		form {
+			width: 98%;
+		}
+	}
 </style>

@@ -66,10 +66,10 @@
 	</div>
 </ContentBox>
 
-<ContentBox title="MAÇONNERIE GÉNÉRALE a saint-malo" borderless></ContentBox>
+<ContentBox title="MAÇONNERIE GÉNÉRALE a saint-malo" borderless titleOnly></ContentBox>
 <Gallery images={galleryImages} />
 
-<ContentBox title="Travaux de RÉNOVATION " borderless></ContentBox>
+<ContentBox title="Travaux de RÉNOVATION " borderless titleOnly></ContentBox>
 <div class="gallery-wrapper">
 	<Gallery images={galleryImagesRenov} />
 </div>

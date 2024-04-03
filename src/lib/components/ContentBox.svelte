@@ -4,6 +4,7 @@
 	export let contrasted = false;
 	export let centered = false;
 	export let themed = false;
+	export let titleOnly = false;
 </script>
 
 <div class:contrasted class:centered class="content-box">
@@ -12,14 +13,16 @@
 			<h1>{title}</h1>
 		{/if}
 	</div>
-	<div class="wrapper">
-		<div class:borderless class:themed class="text">
-			<slot name="text" />
+	{#if !titleOnly}
+		<div class="wrapper">
+			<div class:borderless class:themed class="text">
+				<slot name="text" />
+			</div>
+			<div class="image">
+				<slot name="image" />
+			</div>
 		</div>
-		<div class="image">
-			<slot name="image" />
-		</div>
-	</div>
+	{/if}
 </div>
 
 <style>
@@ -50,10 +53,6 @@
 		text-align: center;
 		margin: 0 auto 0.5rem auto;
 		padding: 1rem;
-	}
-
-	p {
-		margin-bottom: 0.5rem;
 	}
 
 	.wrapper {
@@ -87,6 +86,22 @@
 		}
 		.image {
 			margin-right: 0;
+		}
+	}
+	@media screen and (max-width: 992px) {
+		h1 {
+			padding: 0 0.5rem;
+		}
+		.text {
+			padding-top: 0;
+			padding-bottom: 0;
+			margin: 1rem;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.text,
+		.centered {
+			margin: 1rem 0.5rem;
 		}
 	}
 </style>

@@ -111,6 +111,14 @@ h6.dark {
 	font-size: 30px;
 }
 
+h1 {
+	line-height: 42px;
+}
+
+h2 {
+	line-height: 32px;
+}
+
 a {
 	text-transform: uppercase;
 	text-decoration: none;

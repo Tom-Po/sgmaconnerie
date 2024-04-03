@@ -19,7 +19,6 @@
 		justify-content: space-between;
 		height: 26px;
 		width: 32px;
-		margin-top: 0.5rem;
 		z-index: 2000;
 		margin-left: 1rem;
 	}

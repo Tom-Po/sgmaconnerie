@@ -22,4 +22,11 @@
 	p {
 		margin-bottom: 2rem;
 	}
+
+	@media screen and (max-width: 992px) {
+		h2,
+		p {
+			margin-bottom: 0.5rem;
+		}
+	}
 </style>
